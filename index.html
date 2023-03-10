@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manasvi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300;1,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Ubuntu:ital,wght@0,300;1,300;1,500&display=swap');
+
+        @keyframes pop {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        header nav {
+            display: flex;
+            /* background-color: rgb(161, 161, 231); */
+            background-image: url(pexels-felix-mittermeier-956999.jpg);
+            background-size: cover;
+            color: rgb(236, 171, 236);
+            ;
+            padding-right: 1rem;
+            border-radius: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 40px;
+            margin-bottom: 30px;
+            position: fixed;
+            width: 93vw;
+            box-shadow: 0 0 25px 1px rgb(236, 171, 236);
+            animation: pop 2s;
+        }
+
+        header nav div {
+            margin: 1.2rem;
+            font-size: 1.2rem;
+            justify-content: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.search svg {
+            width: 25px;
+        }
+
+        div.contact svg {
+            width: 25px;
+        }
+
+        div.about svg {
+            width: 25px;
+        }
+
+        div.home svg {
+            width: 25px;
+        }
+
+        body {
+            /* background-color: rgb(133, 128, 128); */
+            background-image: url(pexels-felix-mittermeier-956999.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+        }
+
+        h1 {
+            color: black;
+            text-align: left;
+        }
+
+        p.head2 {
+            font-family: "Ubuntu";
+            font-size: 25px;
+            color: white;
+            font-weight 50;
+            margin-top: 150px;
+            animation: pop 2s;
+
+        }
+
+        .heading {
+            animation: pop 2s;
+        }
+
+        p.head2 span {
+            color: white;
+            text-decoration: underline;
+            font-family: "Poppins";
+        }
+
+        div.b1 {
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            border-radius: 100px;
+            padding-top: 100px;
+        }
+
+        .b1 img {
+            display: inline-block;
+            width: 400px;
+            margin: 50px;
+            border: 3px solid white;
+        }
+
+        div p {
+            display: inline-block;
+            align-self: flex-start;
+            font-weight: 50;
+            font-family: "Ubuntu";
+            font-size: 25px;
+            color: white;
+            margin: 50px;
+        }
+
+        header h1 {
+            animation: pop 2s;
+        }
+
+        header * {
+            cursor: default;
+        }
+
+        header h1:hover {
+            opacity: 0.7;
+        }
+
+        h1.heading2 {
+            font-family: "Ubuntu";
+            font-size: 45px;
+            color: white;
+            text-decoration: underline;
+            text-align: center;
+            margin-right: 100px;
+        }
+
+        .abwork img {
+            display: inline-block;
+            width: 500px;
+            margin: 50px;
+            border: 3px solid white;
+        }
+
+        .abwork {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.home:hover {
+            opacity: 0.7;
+        }
+
+        div.about:hover {
+            opacity: 0.7;
+        }
+        div.Interests:hover {
+            opacity: 0.7;
+        }
+
+
+        div.contact:hover {
+            opacity: 0.7;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .contact-left {
+            flex-basis: 35%;
+        }
+
+        .contact-right {
+            float: right;
+            position: absolute;
+        }
+
+        .mhead {
+            color: rgb(236, 171, 236);
+            
+        }
+
+        .cwork {
+            background-color: aliceblue;
+        }
+
+        section.about * {
+            color: white;
+        }
+
+        div.social-links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section.contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        section.contact div.cright {
+            display: flex;
+            flex-direction: column;
+            margin-right: 100px;
+
+
+        }
+
+        .cleft h1 {
+            font-size: 45px;
+            text-decoration: underline;
+            font-family: "Ubuntu";
+            margin-left: 50px;
+        }
+
+        p.email {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            ;
+        }
+
+        .social-icons {
+            width: 25px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 40px;
+
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 10px;
+        }
+        .cright{
+            background-color: rgb(42, 42, 80);
+            border: 3px solid white;
+
+        }
+        .cright > * {
+            background-color: #3f3f66;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+        h1.heading3{
+            font-family: "Ubuntu";
+            font-size: 45px;
+            color: white;
+            text-decoration: underline;
+            
+            margin-left: 50px; 
+        }
+        .side ul li{
+            font-weight: 50;
+            font-family: "Ubuntu";
+            font-size: 25px;
+            color: white;
+            margin: 50px;
+        }
+        .side{
+            display: flex;
+            justify-content: space-between;
+            margin:100px;
+        }
+        .pics img{
+            width:450px;
+            border: 3px solid white;
+        }
+    
+    </style>
+
+    <body>
+        <header>
+            <nav>
+                <h1 class="mhead">PORTFOLIO</h1>
+                <div class="Big">
+                    <div class="home" title="home"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                        </svg><span>Home</span></div>
+                    <div class="about" title="about"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
+                        </svg><span>About</span></div>
+                    <div class="contact" title="Contact"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                        </svg><span>Contact</span></div>
+                    <div class="Interests" title="Interests">
+                        </svg><span>Interests</span></div>
+                </div>
+            </nav>
+        </header>
+        <div id="Home" class="b1">
+            <img src="IMG-20230310-WA0001.jpg">
+            <p class="head2">Hi,I am
+                <span>
+                    <b>Manasvi Shekhar</b>
+                </span>
+                <br>I am a first year undergraduate student of the Department of Industrial and Systems
+                Engineering(ISE)</br>
+                enrolled in its B.tech course. I am from Dehradun,Uttarakhand.
+                I am pursuing my undergraduate studies from
+                <span>
+                    <b>Indian Institute of Technology Kharagpur</b>
+                </span>.
+            </p>
+        </div>
+
+        <section id="about" class="abwork">
+            <div class="left"><img src="IMG_20230310_153011.jpg"></div>
+            <div class="right">
+                <h1 class="heading2"><b>About me</b></h1>
+                <p>I am a first year engineering student at IIT KGP. I am an enthusiastic person who is eager to learn
+                    not only inside but outside classrooms. I aspire to be a full-stack web developer as I would love
+                    combining
+                    worlds of logic and creative design to make eye catching user friendly website and applications.
+                    <br> Apart from this I am interested in event organising as well.</br>
+                    <br>I am currently working in the Core team as a Kshitij Campus Affiliate in Kshitij,IIT Kharagpur.</br>
+
+                </p>
+            </div>
+        </section>
+       <section id="Interests" class="iwork">
+        <div class="side">
+            <h1 class="heading3"><b>Interests</b></h1>
+            <div class="write">
+            <ul>
+                <li>SINGING</li>
+                <li>BADMINTON</li>
+                <li>PAINTING</li>
+                <li>CODING</li>
+            </ul>
+            </div>
+            <div class="pics">
+                <img src="baddy.png">
+            </div>
+        </div>
+       </section>
+        <section class="contact" id="contact">
+            <div class="cleft">
+                <h1 style="color: white; font-size:45 px">Contact Me</h1>
+                <div class="social-links" style="color: white">
+                    <p class="email"><i class="fa fa-telegram"></i>manasvishekhar17@gmail.com</p>
+                    <p class="mobile"><i class="fa fa-phone"></i>9411568769</p>
+                </div>
+                <div class="social-icons" style="color: white">
+                    <a href="https://www.facebook.com/profile.php?id=100087888134515" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/manasvi_shekhar" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/manasvi_sn/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/manasvi-shekhar-1a193a257/" target="_blank"><i
+                                        class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="cright">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea cols="50" rows="10" placeholder="Your Message"></textarea>
+            </div>
+            </div>
+        </section>
+    </body>
+    <script>
+        about_link = document.getElementsByTagName("nav")[0].getElementsByClassName("about")[0];
+        about_link.addEventListener("click", () => {
+            let about = document.getElementById("about");
+            about.scrollIntoView({ behavior: "smooth" });
+            console.log("hello");
+        })
+
+        home_link = document.getElementsByTagName("nav")[0].getElementsByClassName("home")[0];
+        home_link.addEventListener("click", () => {
+            let Home = document.getElementById("Home");
+            Home.scrollIntoView({ behavior: "smooth" });
+            console.log("hello");
+        })
+        Interets_link = document.getElementsByTagName("nav")[0].getElementsByClassName("Interests")[0];
+        Interets_link.addEventListener("click", () => {
+            let Interests= document.getElementById("Interests");
+            Interests.scrollIntoView({ behavior: "smooth" });
+            console.log("hello");
+        })
+
+        contact_link = document.getElementsByTagName("nav")[0].getElementsByClassName("contact")[0];
+        contact_link.addEventListener("click", () => {
+            let contact = document.getElementById("contact");
+            contact.scrollIntoView({ behavior: "smooth" });
+            console.log("hello");
+        })
+
+        // function click() {
+        // }
+    </script>
+
+</html>
